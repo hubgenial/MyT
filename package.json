@@ -1,0 +1,23 @@
+{
+  "name": "myt",
+  "version": "0.0.1",
+  "description": "Giving special powers to my things",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doijunior/MyT.git"
+  },
+  "author": "Gilson Doi Junior",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/doijunior/MyT/issues"
+  },
+  "homepage": "https://github.com/doijunior/MyT#readme",
+  "dependencies": {
+    "mqtt": "^2.4.0",
+    "node-telegram-bot-api": "^0.27.0"
+  }
+}
