@@ -2,7 +2,7 @@ const mqtt = require('mqtt')
 const client = mqtt.connect('mqtt://test.mosquitto.org')
 
 const TelegramBot = require('node-telegram-bot-api')
-const token = '364406164:AAEegb5Ct6mgcuLPc2-3_xOQywSWa-Em9u0'
+const token = "YOUR_BOT_API_KEY" 
 const MyTtheBot = new TelegramBot(token, {polling: true})
 
 var whosListening = []
