@@ -1,0 +1,6 @@
+{
+  "mqttserver" : "test.mosquitto.org",
+  "mqtttopic" : "newMyT",
+  "telegramkey" : "TELEGRAM_KEY",
+  "slackkey" : "SLACK_KEY"
+}

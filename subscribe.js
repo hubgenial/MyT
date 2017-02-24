@@ -1,8 +1,9 @@
+const config = require('./config.json')
 const mqtt = require('mqtt')
-const client = mqtt.connect('mqtt://test.mosquitto.org')
+const client = mqtt.connect('mqtt://' + config.mqttserver)
 
 const TelegramBot = require('node-telegram-bot-api')
-const token = "YOUR_BOT_API_KEY" 
+const token = config.telegramkey
 const MyTtheBot = new TelegramBot(token, {polling: true})
 
 var whosListening = []
@@ -15,7 +16,7 @@ MyTtheBot.on('message', (msg) => {
 })
 
 client.on('connect', function(){
-  client.subscribe('newMyT')
+  client.subscribe(config.mqtttopic)
 })
 
 client.on('message', function(topic, message){
