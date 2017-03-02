@@ -13,7 +13,7 @@ var bot = new Bot(settings);
 
 bot.on('message', function(data) {
     if (data.type === 'message' && data.text.startsWith('<@U4A8AN27P>')) {
-      var found = data.text.match('<.*> O ([0-9]) é o (.*)')
+      var found = data.text.match('<.*> O ([0-9]) é [oa] (.*)')
       empresas[found[1]] = found[2];
     }
 });
